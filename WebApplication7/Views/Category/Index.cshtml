@@ -32,6 +32,14 @@
             height: max-content;
         }
 
+        .main-books, a:hover,
+        .main-books, a:visited,
+        .main-books, a:active,
+        .main-books, a:link {
+            text-decoration: none;
+            color: #fff;
+        }
+
         .main-books article {
             float: left;
             box-sizing: border-box;
@@ -41,13 +49,18 @@
             position: relative;
             transition: background-color .3s ease;
             width: max-content;
+            transition: 0.3s;
+        }
+
+        .main-books article:hover{
+            transform: scale(1.03);
         }
 
         .main-books.article:nth-child(4n+1) {
             clear: left;
         }
         .main-books article .img {
-            background-color: red;
+            background-color: yellow;
             height: 200px;
             width: 200px;
             position: relative;

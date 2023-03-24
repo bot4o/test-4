@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<WebApplication7.Models.Category>
-<div class="container p-3">
+
     @* <div class="row pt-4">
         <div class="col-6">
             <h2 class="text-primary">Category List</h2>
@@ -12,10 +12,78 @@
     </div>
     <br><br> *@
 
-    @if (Model.Count() > 0)
-    {
+  @*  @if (Model.Count() > 0)
+    {*@
+    <style>
+        .main-books {
+            margin: 0 auto;
+            width: max-content;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 10px;
+            padding: 0;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .main-books a {
+            width: max-content;
+            height: max-content;
+        }
+
+        .main-books article {
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #181818;
+            border-radius: calc(var(--card-container-border-radius) + 2px);
+            position: relative;
+            transition: background-color .3s ease;
+            width: max-content;
+        }
+
+        .main-books.article:nth-child(4n+1) {
+            clear: left;
+        }
+        .main-books article .img {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .main-books article p {
+            max-width: 200px;
+        }
+    </style>
     <div class="container main-article">
         <div class="main-books">
+                <a href="#">
+                    <article>
+                        <div class="img"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="img"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="img"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="img"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </article>
+                </a>
             <a href="#">                
                 <article>
                     <div class="img"></div>
@@ -88,6 +156,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </article>
             </a>
+            <a href="#">                
+                <article>
+                    <div class="img"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </article>
         </div>
     </div>
         @* <table class="table table-bordered  table-striped" style="width:100%"> 
@@ -112,10 +185,9 @@
                 }
             </tbody>
         </table>    *@
-    }
+    @*}
     else
     {
         <p>No Category exists.</p>
-    }
-</div>
+    }*@
 

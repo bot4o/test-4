@@ -444,3 +444,4 @@ C:\Users\User\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\runt
 C:\Users\User\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\User\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\User\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+C:\Users\User\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs

@@ -18,15 +18,20 @@
         .main-books {
             margin: 0 auto;
             width: max-content;
-            text-align: center;
             display: grid;
             grid-template-columns: auto auto auto auto;
             column-gap: 10px;
-            padding: 0;
             column-gap: 20px;
             row-gap: 10px;
         }
-
+        .main-books .description {
+            padding-top: 16px;
+        }
+        .main-books .description .element-price {
+            font-weight: bold;
+            font-size: 30px;
+            float: right;
+        }
         .main-books a {
             width: max-content;
             height: max-content;
@@ -49,7 +54,7 @@
             position: relative;
             transition: background-color .3s ease;
             width: max-content;
-            transition: 0.3s;
+            transition: 0.2s;
         }
 
         .main-books article:hover{
@@ -60,122 +65,159 @@
             clear: left;
         }
         .main-books article .img {
+            margin: 0 auto;
             background-color: cyan;
-            height: 200px;
+            height: 290px;
             width: 200px;
             position: relative;
-            margin-bottom: 16px;
         }
 
         .main-books article p {
             max-width: 200px;
+            margin-bottom: 10px;
         }
     </style>
     <div class="container main-article">
         <div class="main-books">
-                <a href="#">
-                    <article>
-                        <div class="img"></div>
+            <a asp-area="" asp-controller="ElementView" asp-action="Index">                
+                <article>
+                    <div class="img"></div>
+                   <div class="description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </article>
-                </a>
-                <a href="#">
-                    <article>
-                        <div class="img"></div>
+                        <span class="element-price">0.00LV</span>
+                    </div>
+                </article>
+            </a>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
+                    <div class="img"></div>
+                    <div class="description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </article>
-                </a>
-                <a href="#">
-                    <article>
-                        <div class="img"></div>
+                        <span class="element-price">0.00LV</span>
+                    </div>
+                </article>
+            </a>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
+                    <div class="img"></div>
+                    <div class="description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </article>
-                </a>
-                <a href="#">
-                    <article>
-                        <div class="img"></div>
+                        <span class="element-price">0.00LV</span>
+                    </div>
+                </article>
+            </a>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
+                    <div class="img"></div>
+                    <div class="description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </article>
-                </a>
-            <a href="#">                
-                <article>
-                    <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
+        <a asp-area="" asp-controller="ElementView" asp-action="Index">      
+            <article>
                     <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span class="element-price">0.00LV</span>
+                    </div>
                 </article>
             </a>
-            <a href="#">                
-                <article>
-                    <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </article>
-            </a>
-            <a href="#">                
-                <article>
-                    <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </article>
-            </a>
-            <a href="#">                
-                <article>
-                    <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </article>
-            </a>
-            <a href="#">                
-                <article>
-                    <div class="img"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </article>
         </div>
-    </div>
+        @* <table class="table table-bordered  table-striped" style="width:100%"> 
+            <thead>
+                <tr>
+                    <th>
+                        Category Name
+                    </th>
+                    <th>
+                        Display Order   
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td width="50%">@obj.Name</td>
+                        <td width="30%">@obj.DisplayOrder</td>  
+                        <td></td> 
+                    </tr>   
+                }
+            </tbody>
+        </table>    *@
+    }
+    else
+    {
+        <p>No Category exists.</p>
+    }
+</div>
+
+
         @* <table class="table table-bordered  table-striped" style="width:100%"> 
             <thead>
                 <tr>

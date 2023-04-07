@@ -13,6 +13,6 @@ namespace WebApplication7.Data
 
         }
 
-        public DbSet<Models.Category> Category { get; set; }
+        public DbSet<Models.Book> Book { get; set; }
     }
 }

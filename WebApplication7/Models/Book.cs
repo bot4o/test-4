@@ -17,6 +17,6 @@ namespace WebApplication7.Models
         [Required]
         public int Quantity { get; set; }
         public string Description { get; set; }
-        public Blob Image { get; set; }
+        public byte[] Image { get; set; }
     }
 }

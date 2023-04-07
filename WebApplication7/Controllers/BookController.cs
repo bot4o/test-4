@@ -10,17 +10,17 @@ using WebApplication7.Models;
 
 namespace WebApplication7.Controllers
 {
-    public class CategoryController : Controller //bookcategory
+    public class BookController : Controller //bookcategory
     {
-        private readonly ApplicationDbContext _db;
+        private readonly BookDbContext _db;
 
-        public CategoryController(ApplicationDbContext db)
+        public BookController(BookDbContext db)
         {
             this._db = db;
         }
         public IActionResult Index()
         {
-            var objlist = _db.Category.ToList();// IEnumerable<Category> 
+            var objlist = _db.Book.ToList();// IEnumerable<Category> 
             return View(objlist);
         }
         public IActionResult Create()
@@ -30,10 +30,10 @@ namespace WebApplication7.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
+        public IActionResult Create(Book obj)
         {
             //POST - CREATE
-            _db.Category.Add(obj);
+            _db.Book.Add(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }

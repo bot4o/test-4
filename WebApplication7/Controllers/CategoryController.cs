@@ -10,7 +10,7 @@ using WebApplication7.Models;
 
 namespace WebApplication7.Controllers
 {
-    public class CategoryController : Controller
+    public class CategoryController : Controller //bookcategory
     {
         private readonly ApplicationDbContext _db;
 

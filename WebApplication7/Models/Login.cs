@@ -7,8 +7,11 @@ namespace WebApplication7.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        [DisplayName("Display Order")]
-        public int DisplayOrder { get; set; }
+        [Required]
+        public string Username { get; set; }
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string Password { get; set; }
     }
 }

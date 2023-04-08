@@ -10,5 +10,7 @@ namespace WebApplication7.Data
         }
 
         public DbSet<Models.Book> Book { get; set; }
+
+        public DbSet<Models.Login> Login { get; set; }
     }
 }

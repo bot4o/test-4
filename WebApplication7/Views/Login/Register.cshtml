@@ -1,5 +1,5 @@
-﻿@model IEnumerable<WebApplication7.Models.Login>;
-@model WebApplication7.Models.Login;
+﻿@model WebApplication7.Models.Login
+
 @{
     ViewData["Title"] = "Register";
 }
@@ -84,15 +84,15 @@
         <h2>Register</h2>
         <div class="form-group">
             <input asp-for="Username" type="text" name="name" id="name" />
-            <label for="name">Username</label>
+            <label asp-for="Username">Username</label>
         </div>
         <div class="form-group">
             <input asp-for="Email" type="email" name="emailaddress" id="emailaddress" />
-            <label for="emailaddress">Email</label>
+            <label asp-for="Email">Email</label>
         </div>
         <div class="form-group">
             <input asp-for="Password" type="password" name="password" id="password" />
-            <label for="password">Password</label>
+            <label asp-for="Password">Password</label>
         </div>
         <a href="#" class="login-btn">Sign-up</a>
     </div>

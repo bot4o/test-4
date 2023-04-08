@@ -1,14 +1,21 @@
 ﻿@model WebApplication7.Models.Book;
+<style>
+    .border {
 
+        margin 0 auto;
+        position: relative;
+        background: black;
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+</style>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <form method="post" asp-action="Create">
                 <div class="border p-3">
 
-                    <div class="form-group row">
-                        <h2 class="text-info pl-3">Add Book</h2>
-                    </div>
                     <div class="row">
                         <div class="col-8">
                             <div class="form-group row">

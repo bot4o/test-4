@@ -18,9 +18,9 @@
 
     .login-form {
         width: 300px;
-        background: linear-gradient(to bottom, red, black);
+        background:black;
         padding: 20px;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 
     .login-form h2 {
@@ -38,7 +38,7 @@
 }
 
     .form-group label {
-            color: #fff;
+        color: #fff;
         font-size: 10px;
         font-weight: bold;
         margin-left: 10px;
@@ -55,23 +55,32 @@
         font-size: 16px;
     }
 
-    .login-form button {
-        background-color: black;
-        color: #FFFFFF;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
+    .login-form .login-btn {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 20px;
+        background: red;
+        transition: 0.3s;
+        padding: 9px 15px;
     }
+
+    .login-form .login-btn {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .login-form .login-btn:hover {
+            cursor: pointer;
+            text-decoration: none;
+            background: #fff;
+            color: #000;
+        }
 
 
 </style>
 <div class="login-page">
     <div class="login-form">
         <h2>Login</h2>
-        <div class="form-group">
-            <input type="text" name="name" id="name" />
-            <label for="name">Username</label>
-        </div>
         <div class="form-group">
             <input type="email" name="emailaddress" id="emailaddress" />
             <label for="emailaddress">Email</label>
@@ -80,7 +89,7 @@
             <input type="password" name="password" id="password" />
             <label for="password">Password</label>
         </div>
-        <button type="submit">Log In</button>
+        <a href="#" class="login-btn">Log In</a>
     </div>
 </div>
 

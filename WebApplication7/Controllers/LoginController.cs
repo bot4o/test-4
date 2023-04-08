@@ -13,8 +13,9 @@ namespace WebApplication7.Controllers
             _logger = logger;
         }
 
-        public IActionResult Login()
+        public IActionResult Register()
         {
+            
             return View();
         }
 

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication7.Models.MovieCategory>
+﻿@model IEnumerable<WebApplication7.Models.Book>
 
     @* <div class="row pt-4">
         <div class="col-6">
@@ -66,7 +66,7 @@
         }
         .main-books article .img {
             margin: 0 auto;
-            background-color: yellowgreen;
+            background-color: cyan;
             height: 290px;
             width: 200px;
             position: relative;
@@ -77,18 +77,22 @@
             margin-bottom: 10px;
         }
     </style>
+    
     <div class="container main-article">
         <div class="main-books">
-            <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">                
+        @foreach (var obj in Model)
+        {
+            <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">                
                 <article>
-                    <div class="img"></div>
+                    <div class="img"> <img src="@obj.Image"></div>
                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <span class="element-price">0.00LV</span>
+                        <p>@obj.Title</p>
+                        <span class="element-price">@obj.Price.ToString()</span>
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        }
+       @* <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -97,7 +101,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -106,7 +110,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -115,7 +119,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -124,7 +128,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -133,7 +137,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -142,7 +146,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -151,7 +155,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -160,7 +164,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -169,7 +173,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -178,7 +182,7 @@
                     </div>
                 </article>
             </a>
-        <a asp-area="" asp-controller="ElementViewMovies" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -186,7 +190,7 @@
                         <span class="element-price">0.00LV</span>
                     </div>
                 </article>
-            </a>
+            </a>*@
         </div>
         @* <table class="table table-bordered  table-striped" style="width:100%"> 
             <thead>

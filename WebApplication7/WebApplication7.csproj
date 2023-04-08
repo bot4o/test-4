@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Data\NewFolder\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Views\css\" />
     <Folder Include="Views\js\" />
   </ItemGroup>

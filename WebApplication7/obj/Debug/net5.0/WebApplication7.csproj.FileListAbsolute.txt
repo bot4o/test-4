@@ -866,15 +866,11 @@ C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\WebAppli
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\WebApplication7.TagHelpers.output.cache
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\WebApplication7.RazorCoreGenerate.cache
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\AboutUs\Index.cshtml.g.cs
-C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
-C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\ElementViewBooks\Index.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\ElementViewMovies\Index.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
-C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\MovieCategory\Create.cshtml.g.cs
-C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\MovieCategory\Index.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -897,3 +893,5 @@ C:\Users\44740\Documents\GitHub\test-4\WebApplication7\bin\Debug\net5.0\runtimes
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\44740\Documents\GitHub\test-4\WebApplication7\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Book\Create.cshtml.g.cs
+C:\Users\44740\Documents\GitHub\test-4\WebApplication7\obj\Debug\net5.0\Razor\Views\Book\Index.cshtml.g.cs

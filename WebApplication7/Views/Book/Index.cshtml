@@ -80,19 +80,16 @@
     
     <div class="container main-article">
         <div class="main-books">
-        @foreach (var obj in Model)
-        {
-            <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">                
-                <article>
-                    <div class="img"> <img src="@obj.ImageFile"></div>
-                   <div class="description">
-                        <p>@obj.Title</p>
-                        <span class="element-price">@obj.Price.ToString()</span>
-                    </div>
-                </article>
-            </a>
-        }
-       @* <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
+        <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
+            <article>
+                <div class="img"></div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <span class="element-price">0.00LV</span>
+                </div>
+            </article>
+        </a>
+         <a asp-area="" asp-controller="ElementViewBooks" asp-action="Index">
             <article>
                     <div class="img"></div>
                     <div class="description">
@@ -190,7 +187,7 @@
                         <span class="element-price">0.00LV</span>
                     </div>
                 </article>
-            </a>*@
+            </a>
         </div>
         @* <table class="table table-bordered  table-striped" style="width:100%"> 
             <thead>

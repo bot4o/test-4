@@ -20,9 +20,10 @@ namespace WebApplication7.Controllers
         }
         public IActionResult Index()
         {
-            var objlist = _db.Book.ToList();// IEnumerable<Category> 
+            var objlist = _db.Book.ToList();
             return View(objlist);
         }
+
         public IActionResult Create()
         {
             //GET - CREATE

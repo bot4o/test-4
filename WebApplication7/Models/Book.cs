@@ -20,7 +20,5 @@ namespace WebApplication7.Models
         [Required]
         public int Quantity { get; set; }
         public string Description { get; set; }
-        [NotMapped]
-        public IFormFile? ImageFile { get; set; }
     }
 }

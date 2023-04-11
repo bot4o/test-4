@@ -1,106 +1,56 @@
 ﻿@model WebApplication7.Models.Book;
 <style>
-    .border {
-
-        margin 0 auto;
-        position: relative;
-        background: black;
-        border-radius: 20px;
-        color: white;
+     form {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .border {
+        padding: 50px;
+        background-color: black;
+        color: #fff;
+        border-radius: 10px;
+    }
 </style>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <form method="post" asp-action="Create">
-                <div class="border p-3">
-
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Title"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Title" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Author"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Author" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Genre"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Genre" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Price"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Price" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="YearOfPublication"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="YearOfPublication" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Quantity"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Quantity" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Description"></label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Description" class="form-control">
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-8 offset-4 row">
-
-                                    <div class="col">
-                                        <input type="submit" class="btn btn-info w-100" value="Create">
-                                    </div>
-                                    <div class="col">
-                                        <a asp-action="Index" class="btn btn-success w-100">Back</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            @* Keep this empty *@
-                        </div>
-                    </div>
+    <form method="post" asp-action="Create">
+        <div class="border">
+            <div class="row">
+                <div class="form-group row">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control">
                 </div>
-
-            </form>
+                <div class="form-group row">
+                    <label asp-for="Author"></label>
+                    <input asp-for="Author" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Genre"></label>
+                    <input asp-for="Genre" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <label asp-for="YearOfPublication"></label>
+                    <input asp-for="YearOfPublication" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Quantity"></label>
+                    <input asp-for="Quantity" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Description"></label>
+                    <input asp-for="Description" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <input type="submit" class="btn btn-info w-100" value="Create">
+                    <a asp-action="Index" class="btn btn-success w-100">Back</a>
+                </div>
+            </div>
         </div>
-    </div>
-    
+    </form>
 </div>

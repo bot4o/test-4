@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using MovieStoreMvc.Models.Domain;
 using MovieStoreMvc.Models.DTO;
 using MovieStoreMvc.Repositories.Abstract;
@@ -19,7 +20,7 @@ namespace MovieStoreMvc.Repositories.Implementation
             this.signInManager = signInManager;
 
         }
-
+        [HttpPost]
         public async Task<Status> RegisterAsync(RegistrationModel model)
         {
             var status = new Status();

@@ -534,3 +534,4 @@ C:\Users\44740\Documents\GitHub\test-4\MovieStoreMvc\obj\Debug\net6.0\scopedcss\
 C:\Users\44740\Documents\GitHub\test-4\MovieStoreMvc\obj\Debug\net6.0\MovieStoreMvc.csproj.CopyComplete
 C:\Users\44740\Documents\GitHub\test-4\MovieStoreMvc\obj\Debug\net6.0\MovieStoreMvc.genruntimeconfig.cache
 C:\Users\44740\Documents\GitHub\test-4\MovieStoreMvc\obj\Debug\net6.0\ref\MovieStoreMvc.dll
+C:\Users\44740\Documents\GitHub\test-4\MovieStoreMvc\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

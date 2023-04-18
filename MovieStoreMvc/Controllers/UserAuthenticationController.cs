@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using MovieStoreMvc.Models.DTO;
 using MovieStoreMvc.Repositories.Abstract;
 
@@ -17,22 +18,29 @@ namespace MovieStoreMvc.Controllers
           If you need other users ,you can implement this registration method with view
           I have create a complete tutorial for this, you can check the link in description box
          */
-
-        //public async Task<IActionResult> Register()
-        //{
-        //    var model = new RegistrationModel
-        //    {
-        //        Email = "admin@gmail.com",
-        //        Username = "admin",
-        //        Name = "Veliko",
-        //        Password = "Admin@123",
-        //        PasswordConfirm = "Admin@123",
-        //        Role = "Admin"
-        //    };
-        //    // if you want to register with user , Change Role="User"
-        //    var result = await authService.RegisterAsync(model);
-        //    return Ok(result.Message);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Register(RegistrationModel model)
+        {
+            var model1 = new RegistrationModel
+            {
+                Username = model.Username,
+                Password = model.Password,
+                Name = model.Name,
+                Email = model.Email,
+                PasswordConfirm = model.PasswordConfirm,
+                Role = "User"
+            };
+            // if you want to register with user , Change Role="User"
+            var result = await authService.RegisterAsync(model1);
+            if(result.StatusCode == 0)
+            {
+                return View();
+            }
+            else
+            {
+                return View();
+            }
+        }
 
         public async Task<IActionResult> Login()
         {

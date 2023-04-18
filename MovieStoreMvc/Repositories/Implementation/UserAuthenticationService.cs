@@ -23,6 +23,7 @@ namespace MovieStoreMvc.Repositories.Implementation
         [HttpPost]
         public async Task<Status> RegisterAsync(RegistrationModel model)
         {
+
             var status = new Status();
             var userExists = await userManager.FindByNameAsync(model.Username);
             if (userExists != null)

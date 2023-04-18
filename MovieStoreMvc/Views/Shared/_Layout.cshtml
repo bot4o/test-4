@@ -30,7 +30,7 @@
             @if (!string.IsNullOrEmpty(username))
             {
                 <li>
-                    <a href="#">Admin <i class="fa fa-caret-down"></i></a>
+                    <a href="#">@username<i class="fa fa-caret-down"></i></a>
 
                     <ul class="dropdown-nav-link">
                         <li><a href="/Genre/Add">Genre</a></li>
@@ -50,7 +50,7 @@
        @RenderBody()
     </div>
     <footer>
-        &#169; 2022 Ravindra Devrani
+        &#169; 2023 Bookatalog
     </footer>
 </body>
 </html>

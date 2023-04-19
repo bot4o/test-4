@@ -29,7 +29,6 @@ namespace MovieStoreMvc.Controllers
                 PasswordConfirm = model.PasswordConfirm,
                 Role = "User"
             };
-            // if you want to register with user , Change Role="User"
             var result = await authService.RegisterAsync(model1);
             if(result.StatusCode == 0)
             {

@@ -23,9 +23,17 @@ namespace MovieStoreMvc.Repositories.Implementation
         [HttpPost]
         public async Task<Status> RegisterAsync(RegistrationModel model)
         {
-
+            var model1 = new RegistrationModel
+            {
+                Username = model.Username,
+                Password = model.Password,
+                Name = model.Name,
+                Email = model.Email,
+                PasswordConfirm = model.PasswordConfirm,
+                Role = "User"
+            };
             var status = new Status();
-            var userExists = await userManager.FindByNameAsync(model.Username);
+            var userExists = await userManager.FindByNameAsync(model1.Username);
             if (userExists != null)
             {
                 status.StatusCode = 0;
@@ -41,7 +49,7 @@ namespace MovieStoreMvc.Repositories.Implementation
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true,
             };
-            var result = await userManager.CreateAsync(user, model.Password);
+            var result = await userManager.CreateAsync(user, model1.Password);
             if (!result.Succeeded)
             {
                 status.StatusCode = 0;
@@ -49,13 +57,13 @@ namespace MovieStoreMvc.Repositories.Implementation
                 return status;
             }
 
-            if (!await roleManager.RoleExistsAsync(model.Role))
-                await roleManager.CreateAsync(new IdentityRole(model.Role));
+            if (!await roleManager.RoleExistsAsync(model1.Role))
+                await roleManager.CreateAsync(new IdentityRole(model1.Role));
 
 
             if (await roleManager.RoleExistsAsync(model.Role))
             {
-                await userManager.AddToRoleAsync(user, model.Role);
+                await userManager.AddToRoleAsync(user, model1.Role);
             }
 
             status.StatusCode = 1;

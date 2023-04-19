@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MovieStoreMvc.Models.DTO;
 
 namespace MovieStoreMvc.Models.Domain
 {
@@ -13,5 +14,6 @@ namespace MovieStoreMvc.Models.Domain
         public DbSet<Genre> Genre { get; set; }
         public DbSet<BookGenre> BookGenre { get; set; }
         public DbSet<Book> Book { get; set; }
+        public DbSet<RegistrationModel> RegistrationModel { get; set; }
     }
 }
